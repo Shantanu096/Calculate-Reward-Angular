@@ -1,0 +1,68 @@
+<div>
+    <h1>Reward Points Calculator</h1>
+    <table>
+        <tr>
+            <th>Customer</th>
+            <th *ngFor="let month of months">{{ month }}</th>
+            <th>Total Reward Points</th>
+        </tr>
+        <tr *ngFor="let reward of rewards">
+            <td>{{ reward.customerId }}</td>
+            <td *ngFor="let month of months">{{ reward.pointsPerMonth[month] }}</td>
+            <td>{{ reward.totalPoints }}</td>
+        </tr>
+    </table>
+</div>
+<div>
+    <h1>Dummy Data Set</h1>
+    <tr>
+        <th>Customer Id</th>
+        <th>Months</th>
+        <th>Tranction Amount</th>
+    </tr>
+    <tr>
+		<td>Customer1</td>
+        <td>January</td>
+        <td>120</td>
+    </tr>
+	<tr>
+		<td>Customer1</td>
+        <td>February</td>
+        <td>80</td>
+    </tr>
+	<tr>
+		<td>Customer1</td>
+        <td>February</td>
+        <td>80</td>
+    </tr>
+	<tr>
+		<td>Customer2</td>
+        <td>January</td>
+        <td>150</td>
+    </tr>
+	<tr>
+		<td>Customer2</td>
+        <td>January</td>
+        <td>70</td>
+    </tr>
+	<tr>
+		<td>Customer2</td>
+        <td>February</td>
+        <td>40</td>
+    </tr>
+	<tr>
+		<td>Customer3</td>
+        <td>March</td>
+        <td>90</td>
+    </tr>
+	<tr>
+		<td>Customer3</td>
+        <td>March</td>
+        <td>110</td>
+    </tr>
+	<tr>
+		<td>Customer3</td>
+        <td>March</td>
+        <td>70</td>
+    </tr>
+</div>
